@@ -1,0 +1,39 @@
+#container
+{
+	margin: 50px auto;	
+}
+.tabl
+{
+
+}
+.tabl tr td
+{
+	width: 50px;
+	height: 50px;
+}
+#h_slider
+{
+	height: 20px;
+	overflow: auto;
+}
+#h_slider div
+{
+	width:10000px;
+	height: 1px;
+	overflow: auto;
+}
+#v_slider
+{
+	width: 20px;
+	overflow: auto;
+}
+#v_slider div
+{
+	width: 1px;
+	height: 10000px;
+	overflow: auto;
+}
+#info
+{
+	margin:10px;
+}
