@@ -3,15 +3,15 @@
 Это библиотека JavaScript, которая позволяет маленькую таблицу, помещаемую на экране, проецировать и перемешать на таблицы, на порядок большие экрана.
 Основная единица – функция класс TableScrollFunction.
 Его публичные элементы:
-	Объект settings  - настройки библиотеки;
-	Функция onScroll (fx(leftX, topY))  - подписка на событие перемещения таблицы
-	Функция onGetNewCells(fx(array cells) – подписка на событие загрузки ячеек
-		cell – { globalX,	globalY, localX,	localY } 
-	Функция onCellMouseover(fx(event, tableX, tableY, target))  – подписка на событие получения фокуса ячейкой 
-	Функция onCellMouseout (fx(event, tableX, tableY, target))  – подписка на событие потери фокуса ячейкой
-	Функция getTable() – получение объекта DOM таблицы
-	Функция getCell(x,y) – получение объекта DOM ячейки	
-	Функция  Load() – функция инициализация работы библиотеки
+        Объект settings  - настройки библиотеки;
+        Функция onScroll (fx(leftX, topY))  - подписка на событие перемещения таблицы
+        Функция onGetNewCells(fx(array cells) – подписка на событие загрузки ячеек
+        	cell – { globalX,	globalY, localX,	localY } 
+        Функция onCellMouseover(fx(event, tableX, tableY, target))  – подписка на событие получения фокуса ячейкой 
+        Функция onCellMouseout (fx(event, tableX, tableY, target))  – подписка на событие потери фокуса ячейкой
+        Функция getTable() – получение объекта DOM таблицы
+        Функция getCell(x,y) – получение объекта DOM ячейки	
+        Функция  Load() – функция инициализация работы библиотеки
 
 Объект settings : 
 	idDivContainer : id элемента контейнера
