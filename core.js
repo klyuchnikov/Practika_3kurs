@@ -17,14 +17,6 @@ function TableScrollFunction(){
 		GlobalColumn: 25, // количество столбцов глобального пространства
 		delayLoad : 200 // задержка между скролингом и началом подгрузки ячеек
 	};
-	function genId(count){ // функция генерации псевдослучайных последовательностей знаков
-		var chars = '1234567890!@#$%^&*_'
-		var res = '';
-		for(var i = 0; i < count; i++)
-			res += chars[Math.round(Math.random()*(chars.length - 1))];
-		return  res;
-	}
-	
 	this.onScroll = function(handler) { // делегат для функций скроллирования
 		prSetting.scrollHandlerList.push(handler);
 	}
@@ -127,6 +119,14 @@ function TableScrollFunction(){
 		isLoadOfScroll: false, // требуется ли вызвать загрузку ячеек
 		arrayIsLoadCells: new Array() // массив, проецированный на таблицу, показывающий загруженные ячейки 
 	};
+	
+	function genId(count){ // функция генерации псевдослучайных последовательностей знаков
+		var chars = '1234567890!@#$%^&*_'
+		var res = '';
+		for(var i = 0; i < count; i++)
+			res += chars[Math.round(Math.random()*(chars.length - 1))];
+		return  res;
+	}
 	
 	function getContainer(_this){ return document.getElementById(_this.settings.idDivContainer);} // получение контейнера 
 	function getTable(prSetting){ return document.getElementById(prSetting.tableId);} // получение таблицы 
